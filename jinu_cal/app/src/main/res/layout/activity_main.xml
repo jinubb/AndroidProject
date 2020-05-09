@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:paddingTop ="30dp"
+        android:text="선택을 시작하시겠습니까?"
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize = "20dp"></TextView>
+
+    <Switch
+        android:id="@+id/sw1"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="시작함" ></Switch>
+
+    <TextView
+        android:paddingTop = "20dp"
+        android:text="좋아하는 안드로이드 버전은?"
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize = "20dp"
+        android:visibility="gone"></TextView>
+
+    <RadioGroup
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg1"
+        android:visibility="gone">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오레오(8.0)"
+            android:id="@+id/rb1" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="파이(9.0)"
+            android:id="@+id/rb2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q(10.0)"
+            android:id="@+id/rb3" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/im1"
+        android:padding = "15dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/and_2"
+        android:visibility="gone"></ImageView>
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:id="@+id/btn1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="종료" ></Button>
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:id="@+id/btn2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="처음으로" ></Button>
+
+</LinearLayout>
