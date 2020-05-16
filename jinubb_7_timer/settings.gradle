@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='jinubb_7_timer'
